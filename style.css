@@ -317,8 +317,8 @@ a {
   position: relative;
   display: flex;
   justify-content: center;
-  height: 100px;
-  width: 100px;
+  height: 110px;
+  width: 110px;
   border: 1px solid #00785a;
   background-color: #fffffc;
   border-radius: 50%;
