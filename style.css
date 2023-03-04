@@ -36,14 +36,7 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Raleway";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../fonts/Raleway-Bolditalic.woff2") format("woff2"),
-    url("../fonts/Raleway-Bolditalic.woff") format("woff");
-  font-display: swap;
-}
+
 
 /* ---------- RESET */
 
@@ -56,7 +49,7 @@ body {
   background-color: rgb(16, 16, 16);
   color: #f5f3f3;
   min-height: 100%;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -164,6 +157,7 @@ a {
   text-align: center;
   font-size: 30px;
   margin-bottom: 30px;
+  font-weight: 700;
   color: #00785a;
 }
 
@@ -264,7 +258,7 @@ a {
 }
 
 .tabs__content-title {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 26px;
   margin-bottom: 18px;
   color: #c40707;
@@ -272,7 +266,7 @@ a {
 
 .tabs__content-box {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 20px;
   background-color: #01271e6a;
   border-radius: 8px;
@@ -289,7 +283,7 @@ a {
 
 .tabs__menu {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .tabs__menu-item {
@@ -365,7 +359,7 @@ a {
 
 .tabs__content-link:hover {
   background-color: #fffffc;
-  color: #8a0101;
+  color: #c40707;
 }
 
 /* ---------- INFORMATION */
@@ -456,14 +450,3 @@ a {
   }
 }
 
-@media (min-width: 768px) {
-}
-
-@media (min-width: 992px) {
-}
-
-@media (min-width: 1200px) {
-}
-
-@media (min-width: 1400px) {
-}
