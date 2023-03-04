@@ -61,6 +61,8 @@ body {
   font-family: "Raleway";
   font-weight: 400;
   font-size: 16px;
+
+ 
 }
 
 *,
@@ -160,6 +162,7 @@ a {
 .section {
   padding: 70px 0;
   min-height: 100vh;
+
 }
 
 .title {
@@ -234,13 +237,11 @@ a {
 
 /* ---------- TABS */
 
-.tabs {
-  display: grid;
-  gap: 40px;
-}
-
-.tabs__button {
+.tabs{
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
 }
 
 .tabs__button-item {
@@ -254,43 +255,44 @@ a {
   display: flex;
 }
 
-.tabs__content {
-  position: relative;
-  min-height: 450px;
+.tabs__button {
   display: flex;
-  flex-direction: column;
 }
+
+.tabs__content {
+
+  min-height: 450px;
+}
+
+.tabs__content-item {
+  display: none;
+
+
+  }
+
+  .tabs__content-item--active {
+   display: block;
+
+  }
+
+  .tabs__content-title {
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 18px;
+    color: #c40707;
+  }
 
 .tabs__content-box {
   display: flex;
+  margin-bottom: 30px;
   padding: 20px;
   background-color: #01271e6a;
   border-radius: 8px;
   border-radius: 4px;
+  
+ 
 }
 
-.tabs__content-item {
-  display: flex;
-  flex-direction: column;
-  gap: 90px 0;
-  opacity: 0;
-  width: 100%;
-}
-
-.tabs__content-item--active {
-  opacity: 1;
-}
-
-.tabs__content-img {
-  align-self: stretch;
-}
-
-.tabs__content-title {
-  font-weight: 600;
-  font-size: 26px;
-  margin-bottom: 18px;
-  color: #c40707;
-}
 
 .tabs__content-text p {
   margin-bottom: 12px;
@@ -338,10 +340,13 @@ a {
 }
 
 .bank__name {
-  padding: 50px;
+  padding: 30px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 95px 90px;
+  background-size: 75px 70px;
+  color: #8a0101;
+  font-weight: 600;
+  text-align: center;
 }
 
 .bank__rating {
@@ -349,6 +354,9 @@ a {
   right: 0;
   font-size: 14px;
   padding: 3px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
   background-color: #00785a;
   color: #fffffc;
   border-radius: 50px;
@@ -381,6 +389,7 @@ a {
 .information {
   padding: 80px;
   background-color: #303030ae;
+ 
 }
 
 .information__item {
